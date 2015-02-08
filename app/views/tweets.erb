@@ -1,0 +1,27 @@
+<DOCTYPE!>
+
+<html>
+  <head>
+    <title> F W I T T E R </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+  <h1>F W I T T E R</h1>
+    <div class="container">
+      <% @tweets.each do |tweet| %>
+        <h1><%=tweet.user%> - <%=tweet.message %></h1>
+      <% end %>
+
+      <form action="/tweets" method="POST">
+      User: <input type="text" name="user">
+      Message: <input type="text" name="message">
+      Button: <input type="submit">
+     </form>
+     </div>
+
+   </body>
+    
+
+</html>
+
+
